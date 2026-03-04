@@ -66,6 +66,8 @@ def main() -> None:
         all_drafts.append(draft)
 
     # --- Step 5: Write drafts to Sheets ---
+    # Fresh client: the connection from Step 3 may have dropped after the long content loop.
+    sheets = SheetsClient()
     sheets.write_linkedin_drafts(topics, all_drafts)
     sheets.write_video_scripts(topics, all_drafts)
 
