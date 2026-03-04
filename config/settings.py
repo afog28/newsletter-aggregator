@@ -11,7 +11,7 @@ NEWSLETTER_SENDERS = [
 ]
 
 # --- Claude model ---
-CLAUDE_MODEL = "claude-haiku-4-5-20251001"
+CLAUDE_MODEL = "claude-sonnet-4-5"
 
 # --- Google Sheets ---
 SPREADSHEET_ID = os.environ.get("SPREADSHEET_ID", "")
